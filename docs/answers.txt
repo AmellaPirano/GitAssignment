@@ -1,0 +1,28 @@
+a) Counting objects: 4, done.
+   Deltacompression using up to 4 threads.
+   Compressing objects: 100% (3/3), done.
+   Writing objects: 100% (4/4), 561 bytes | 0 bytes/s, done.
+   Total 4 (delta 1), reused 0 (delta 0)
+   remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
+   To https://github.com/AmellaPirano/GitAssignment.github
+   	835c673..5e4f379  master -> master
+
+b) 12.
+   Command used: git log --oneline
+
+c) Thursday, September 15th, 2016 10:29:34.
+   Command used: git log .gitignore
+
+d) .gitignore : 2
+   GitAssignment.iml : 0
+   README.md : 3
+   Command used: git log --oneline <filename> for each file in src
+
+e) git log shows commits from all users. git status only shows information
+on the current working directory.
+
+f) git log RoleGame.java
+
+g) git log --grep="file"
+
+h) git log --author=Alice --after=09/01/2016 --before=09/16/2016
