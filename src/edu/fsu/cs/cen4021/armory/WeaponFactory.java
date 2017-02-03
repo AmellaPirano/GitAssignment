@@ -8,10 +8,13 @@ package edu.fsu.cs.cen4021.armory;
 /**
  * @author Javier
  */
-public class WeaponFactory {
+public class WeaponFactory
+{
 
-    public static Weapon getWeapon(String type) {
-        switch (type) {
+    public static Weapon getWeapon(String type)
+    {
+        switch (type)
+        {
             case "sword":
                 return new Sword();
             case "simple arrow":
@@ -20,6 +23,8 @@ public class WeaponFactory {
                 return new SimpleAxe();
             case "simple magic staff":
                 return new SimpleMagicStaff();
+            case "the chosen one axe":
+                return new TheChosenOneAxe();
             default:
                 throw new IllegalArgumentException("Invalid type");
         }

@@ -5,9 +5,10 @@ package edu.fsu.cs.cen4021.armory;
  */
 class BasicWeapon {
 
-    final int DAMAGE;
+    int DAMAGE;
 
-    BasicWeapon(int DAMAGE) {
+    BasicWeapon(int DAMAGE)
+    {
         this.DAMAGE = DAMAGE;
     }
 }

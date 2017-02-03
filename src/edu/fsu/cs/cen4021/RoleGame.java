@@ -6,9 +6,11 @@ import edu.fsu.cs.cen4021.armory.WeaponFactory;
 /**
  * @author Javier
  */
-public class RoleGame {
+public class RoleGame
+{
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         Weapon sword = WeaponFactory.getWeapon("sword");
         System.out.println("Sword has " + sword.hit() + " of damage.");
         int armor = 20;
@@ -21,14 +23,13 @@ public class RoleGame {
         Weapon simpleAxe = WeaponFactory.getWeapon("simple axe");
         System.out.println("Simple axe has " + simpleAxe.hit() + " of damage.");
         System.out.println("Simple axe was able to do " + simpleAxe.hit(armor) + " of damage to an armor with " + armor + " points.");
-        int armor2 = 10;
-        System.out.println("Simple axe was able to do " + simpleAxe.hit(armor2) + " of damage to an armor with " + armor2 + " points.");
 
         Weapon simpleStaff = WeaponFactory.getWeapon("simple magic staff");
         System.out.println("Simple magic staff has " + simpleStaff.hit() + " of damage.");
         System.out.println("Simple magic staff was able to do " + simpleStaff.hit(armor) + " of damage to an armor with " + armor + " points.");
-        armor2 = 30;
-        System.out.println("Simple magic staff was able to do " + simpleStaff.hit(armor2) + " of damage to an armor with " + armor2 + " points.");
 
+        Weapon chosenAxe = WeaponFactory.getWeapon("the chosen one axe");
+        System.out.println("Chosen axe has " + chosenAxe.hit() + " of damage.");
+        System.out.println("Chosen axe was able to do " + chosenAxe.hit(armor) + " of damage to an armor with " + armor + " points.");
     }
 }
