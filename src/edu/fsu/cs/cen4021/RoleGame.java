@@ -31,5 +31,9 @@ public class RoleGame
         Weapon chosenAxe = WeaponFactory.getWeapon("the chosen one axe");
         System.out.println("Chosen axe has " + chosenAxe.hit() + " of damage.");
         System.out.println("Chosen axe was able to do " + chosenAxe.hit(armor) + " of damage to an armor with " + armor + " points.");
+
+        Weapon ancientStaff = WeaponFactory.getWeapon("ancient magic staff");
+        System.out.println("Ancient magic staff has " + ancientStaff.hit() + " of damage.");
+        System.out.println("Ancient magic staff was able to do " + ancientStaff.hit(armor) + " of damage to an armor with " + armor + " points.");
     }
 }
